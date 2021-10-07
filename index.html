@@ -88,13 +88,8 @@
 <script src="js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi --> 
 <script src="js/main.js"></script> <!-- Default JS --> 
 <script type="text/javascript" src="js/carousels.js"></script> 
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#contact-form').on('submit', function(e) {
-  $('#contact-form-div').fadeOut(2000);
-  $('#contact-form-div').prepend('Your submission has been processed...');
-  });
-</script>
+
+
 <!-- End Js -->
 <!-- Analytics -->
 
@@ -550,6 +545,13 @@ $('#contact-form').on('submit', function(e) {
           <div id="response"> </div>
         </form>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+        <script type="text/javascript">var submitted=false;</script>
+        <script type="text/javascript">
+          $('#contact-form').on('submit', function(e) {
+            $('#contact-form-div').fadeOut(2000);
+            $('#contact-form-div').prepend('Your submission has been processed...');
+            });
+          </script>
       </div>
       <div class="span4">
         <div class="contact-details">
