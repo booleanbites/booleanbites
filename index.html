@@ -91,8 +91,8 @@
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
 $('#contact-form').on('submit', function(e) {
-  $('#contact-form *').fadeOut(2000);
-  $('#contact-form').prepend('Your submission has been processed...');
+  $('#contact-form-div').fadeOut(2000);
+  $('#contact-form-div').prepend('Your submission has been processed...');
   });
 </script>
 <!-- End Js -->
@@ -533,7 +533,7 @@ $('#contact-form').on('submit', function(e) {
     
     <!-- ?usp=pp_url&entry.754923438=Username&entry.269980458=user@gmail.com&entry.326165726=Hello+hello -->
     <div class="row">
-      <div class="span6 offset2">
+      <div id="contact-form-div" class="span6 offset2">
         <form id="contact-form" name="contact-form" class="contact-form"
         action="https://docs.google.com/forms/d/e/1FAIpQLSdJhK4hrUiLE3XPY_A4hX3ybOQexnaCYbnvl8Lpmt8akUDT0Q/formResponse?"
         target="hidden_iframe" onsubmit="submitted=true;">
@@ -549,8 +549,9 @@ $('#contact-form').on('submit', function(e) {
           <p class="contact-submit"> <input type="submit" value="Submit"></p>
           <div id="response"> </div>
         </form>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+        
       </div>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
       <div class="span4">
         <div class="contact-details">
           <h4>Get in touch</h4>
