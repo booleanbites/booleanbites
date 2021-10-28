@@ -354,7 +354,7 @@ a.button.boxed.black::before {
 
 #logo {
     position: fixed;
-    left: 60px;
+    left: 40px;
     top: 40px;
     z-index: 500;
 }
