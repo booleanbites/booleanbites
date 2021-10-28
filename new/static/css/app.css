@@ -1553,7 +1553,7 @@ label.error {
 }
 
 #case-1 {
-    background: #a0b3c0;
+    background: #cacaca;
 }
 
 #case-2 {
@@ -1583,7 +1583,7 @@ label.error {
 
 #case-1 .svg-graphic>rect {
     mask: url(#case-1-mask);
-    fill: #a0b3c0;
+    fill: #cacaca;
 }
 
 #case-2 .svg-graphic>rect {
@@ -1724,7 +1724,7 @@ label.error {
 }
 
 .color-wrapper #color-3 {
-    background: #a0b3c0;
+    background: #cacaca;
     height: 100%;
     color: #fff;
     padding: 20px;
@@ -1741,7 +1741,7 @@ label.error {
 
 .case-bottom {
     text-align: center;
-    background: #555;
+    background: #4bc0af;
     padding: 260px 0;
     margin: 0 13vw;
     transition: margin 0.5s ease;
