@@ -1510,7 +1510,7 @@ label.error {
 
 .brand-video {
     width: 998px;
-    height: auto;
+    height: 70%;
     display: block;
     object-fit: cover;
     position: absolute;
