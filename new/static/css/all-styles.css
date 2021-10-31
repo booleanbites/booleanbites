@@ -1,3 +1,12 @@
+@import url(font-awesome.css);
+@import url(linea-styles.css);
+@import url(linea-arrows-styles.css);
+@import url(gilroy.css);
+@import url(foundation.css);
+@import url(app.css);
+
+/***********resposive.css*********/
+
 @media only screen and (max-width: 1800px) {
     .svg-graphic {
         width: 900px;
