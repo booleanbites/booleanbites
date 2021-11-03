@@ -10469,7 +10469,7 @@
         window.swiper = swiper;
     }
 
-    swiperInit();
+    //swiperInit();
 
     var smoothStateOptions = {
         debug: true,

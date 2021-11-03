@@ -2,6 +2,8 @@
 <html lang="en" class="no-js">
 
 <head>
+    <script src="js/jquery.min.js"></script>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
@@ -420,46 +422,52 @@
                     <ul class="socials">
                         <li><a href="https://twitter.com/BooleanBites"><i class='fa fa-twitter'></i></a></li>
                         <li><a href="https://www.facebook.com/booleanbitesltd"><i class='fa fa-facebook'></i></a></li>
-                        <li><a href="#"><i class='fa fa-linkedin'></i></a></li>
-                        <li><a href="#"><i class='fa fa-instagram'></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/booleanbites-ltd"><i class='fa fa-linkedin'></i></a></li>
+                        <!-- <li><a href="#"><i class='fa fa-instagram'></i></a></li>
                         <li><a href="#"><i class='fa fa-dribbble'></i></a></li>
-                        <li><a href="#"><i class='fa fa-youtube'></i></a></li>
+                        <li><a href="#"><i class='fa fa-youtube'></i></a></li> -->
                     </ul>
                     <div class="two spacing"></div>
                 </div>
             </div>
+            <script type="text/javascript">var submitted = false;</script>
             <div class='form'>
-                <form id='contact-form' name="contact-form" method='POST' class="" action="https://docs.google.com/forms/d/e/1FAIpQLSdJhK4hrUiLE3XPY_A4hX3ybOQexnaCYbnvl8Lpmt8akUDT0Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSdJhK4hrUiLE3XPY_A4hX3ybOQexnaCYbnvl8Lpmt8akUDT0Q/formResponse?" 
+                class='contact-form' id='contact-form' name="contact-form" target="hidden_iframe"
+                 onsubmit="submitted=true;">
                     <div class="large-6 columns">
-                        <input class='required' id="entry.754923438" type="text" placeholder="Full Name" value="" name="entry.754923438">
+                        <input class='required' id="entry.754923438" name="entry.754923438" type="text" placeholder="Full Name" value="" >
                     </div>
                     <div class="large-6 columns">
-                        <input class='required email' id="entry.269980458" type="text" placeholder="Email Address" value="" name="entry.269980458">
+                        <input class='required email' id="entry.269980458" name="entry.269980458" type="text" placeholder="Email Address" value="" >
                     </div>
                     <!-- <div class="large-12 columns">
                         <input class='required' name='subject' placeholder='SUBJECT' type='text'>
                     </div> -->
                     <div class="large-12 columns">
-                        <textarea class='required' id="entry.326165726" placeholder="Your Message" name="entry.326165726"></textarea>
+                        <textarea class='required' id="entry.326165726" name="entry.326165726" placeholder="Your Message" ></textarea>
                         <input class='button white boxed contact-button' type='submit' value="Submit">
-                        <p class='hide thanks'>
-                            Thanks for contacting us, we'll be in touch soon!
-                        </p>
                     </div>
+                    
+                    
+                    
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                    
+                    
                 </form>
-                <div id="response"> </div>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-                <script type="text/javascript">
-                    var submitted = false;
-                </script>
+                <div id="response"></div>
                 <script type="text/javascript">
                     $('#contact-form').on('submit', function(e) {
                         $('#contact-form').fadeOut(2000);
-                        $('#response').prepend('Your message has been sent...');
+                        $('#response').prepend('Thanks for contacting us, we\'ll be in touch soon!');
                     });
                 </script>
+                
             </div>
+            
         </div>
+        
     </div>
     <!-- end contact us -->
     <!-- copyright -->
@@ -479,6 +487,7 @@
 
     <!-- JS -->
     <script src="js/main.js"></script>
+    
 </body>
 
 </html>
