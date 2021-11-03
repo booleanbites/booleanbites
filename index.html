@@ -438,16 +438,16 @@
 
                 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdJhK4hrUiLE3XPY_A4hX3ybOQexnaCYbnvl8Lpmt8akUDT0Q/formResponse?" class='contact-form' id='contact-form' name="contact-form" target="hidden_iframe" onsubmit="submitted=true;">
                     <div class="large-6 columns">
-                        <input class='required' id="entry.754923438" name="entry.754923438" type="text" placeholder="Full Name" value="">
+                        <input class='required name' id="entry.754923438" name="entry.754923438" type="text" placeholder="Full Name" value="" required>
                     </div>
                     <div class="large-6 columns">
-                        <input class='required email' id="entry.269980458" name="entry.269980458" type="text" placeholder="Email Address" value="">
+                        <input class='required email' id="entry.269980458" name="entry.269980458" type="email" placeholder="Email Address" value="" required>
                     </div>
                     <!-- <div class="large-12 columns">
                         <input class='required' name='subject' placeholder='SUBJECT' type='text'>
                     </div> -->
                     <div class="large-12 columns">
-                        <textarea class='required' id="entry.326165726" name="entry.326165726" placeholder="Your Message"></textarea>
+                        <textarea class='required Message' id="entry.326165726" name="entry.326165726" placeholder="Your Message" required></textarea>
                         <input class='button white boxed contact-button' type='submit' value="Submit">
                     </div>
 
@@ -457,11 +457,13 @@
 
 
                 </form>
-                <div id="response">Thanks for contacting us, we'll be in touch soon!</div>
+
+                <div class="large-12 columns centered-text large-centered" id="response"></div>
+
                 <script type="text/javascript">
                     $('#contact-form').on('submit', function(e) {
-                        $('#contact-form').fadeOut(2000);
-                        $('#response').prepend('Thanks for contacting us, we\'ll be in touch soon!');
+                        $('#contact-form').addClass("d-none").fadeOut(1000);
+                        $('#response').addClass("d-block").fadeIn(5000).prepend('Thanks for contacting us, we\'ll be in touch soon!');
                     });
                 </script>
 
