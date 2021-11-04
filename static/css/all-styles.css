@@ -29,6 +29,12 @@
     float: right;
 }
 
+.button.seprator {
+    background: none;
+    color: #000;
+    padding: 0px 10px;
+}
+
 
 /***********resposive.css*********/
 
@@ -282,11 +288,13 @@
     .case-intro-wrapper h2 {
         margin-bottom: 10px;
     }
-    .button {
-        /* line-height: 1.4rem;
+    /* .button {
+       line-height: 1.4rem;
         padding: 5px 30px 5px 45px;
         font-size: 16px;
-        font-weight: bold;*/
+        font-weight: bold;
+    }*/
+    .contact-button {
         width: 100%;
     }
     a.button.boxed.black::before {
