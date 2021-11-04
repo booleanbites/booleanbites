@@ -1118,6 +1118,11 @@
     .left-section {
         top: 260px;
     }
+    .styled-button-wrapper {
+        position: relative;
+        padding: 20px 0;
+        left: 0;
+    }
 }
 
 
