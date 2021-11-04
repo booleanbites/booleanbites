@@ -21,6 +21,14 @@
     display: none !important;
 }
 
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
 
 /***********resposive.css*********/
 
