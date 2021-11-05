@@ -94,6 +94,30 @@
     .case-table-content {
         width: 50vw;
     }
+    .app-icon {
+        width: 15%;
+        left: 6%;
+        top: 14%;
+    }
+    .screenshot {
+        width: 50%;
+        left: 44%;
+        top: 36%;
+    }
+    .screenshot1 {
+        width: 45%;
+        left: 28%;
+        top: 10%;
+    }
+    .app-icon.right {
+        right: 6%;
+    }
+    .screenshot.right {
+        right: 44%;
+    }
+    .screenshot1.right {
+        right: 28%;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -461,6 +485,12 @@
 }
 
 @media only screen and (max-width: 800px) {
+    .hide-for-small-only {
+        display: none !important;
+    }
+    .show-for-small-only {
+        display: block !important;
+    }
     nav.wrapper a span.title {
         display: none;
     }
@@ -722,6 +752,29 @@
     }
     .case-intro-wrapper h2 {
         font-size: 56px;
+    }
+    .screenshot {
+        width: 40%;
+        left: 54%;
+    }
+    .screenshot1 {
+        width: 35%;
+        left: 40%;
+        top: 14%;
+    }
+    .app-icon {
+        width: 17%;
+        left: 8%;
+    }
+    .screenshot.right {
+        right: 54%;
+    }
+    .screenshot1.right {
+        right: 40%;
+        top: 14%;
+    }
+    .app-icon.right {
+        right: 8%;
     }
 }
 

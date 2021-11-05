@@ -1908,6 +1908,7 @@ label.error {
     position: relative;
     height: auto;
     min-height: 50vh;
+    overflow: hidden;
 }
 
 .case-table .case-image img {
