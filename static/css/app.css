@@ -1738,8 +1738,8 @@ label.error {
 .bg-text-honri {
     overflow: hidden;
     position: absolute;
-    top: 0;
-    left: 30%;
+    top: -70px;
+    left: 5%;
     z-index: -1;
     width: 200vw;
     height: auto;
@@ -1749,8 +1749,9 @@ label.error {
     font-weight: 900;
     font-size: 30vw;
     line-height: 1em;
-    color: #000;
-    opacity: 0.04;
+    color: #eee;
+    /* color: #000;
+    opacity: 0.04; */
 }
 
 .float-img {

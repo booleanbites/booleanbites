@@ -118,6 +118,12 @@
     .screenshot1.right {
         right: 28%;
     }
+    .bg-text-honri {
+        top: -40px;
+    }
+    .bg-text-honri h2 {
+        font-size: 38vw;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1147,6 +1153,12 @@
     }
     nav#main-menu {
         top: 15%;
+    }
+    .bg-text-honri {
+        top: 0;
+    }
+    .bg-text-honri h2 {
+        font-size: 38vw;
     }
 }
 
